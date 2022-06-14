@@ -1,0 +1,67 @@
+h1 {
+  font-size: 30px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: contents;
+}
+h2 {
+  font-size: 28px;
+  text-align: center;
+  color: darkslategrey;
+}
+.main_img {
+  margin-left: 10%;
+  height: 10%;
+  width: 10%;
+}
+.image_style {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  display: inline;
+  margin-left: 58%;
+}
+ul li {
+  color: white;
+  display: inline-block;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(47, 79, 79, 0.92) 3%,
+    rgba(255, 255, 255, 1) 31%
+  );
+}
+
+#show_div {
+  border: 0.5px dashed black;
+  margin-top: -54%;
+  margin-left: 40%;
+  width: 41%;
+  height: 115vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#ok {
+  background-color: black;
+  color: green;
+  opacity: 0.5;
+  border: none;
+  width: 12%;
+  height: 7vh;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: 88%;
+  margin-top: 7%;
+}
+
+#ok:hover {
+  opacity: 1;
+}

@@ -1,0 +1,305 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: black;
+}
+span {
+  display: inline-block;
+}
+#blue_box {
+  background-color: #386093;
+  position: relative;
+  width: 40%;
+  height: 8vh;
+  margin: 0px;
+}
+#main_div {
+  border: 3px solid black;
+  height: 910px;
+  width: 53%;
+  margin-top: 5%;
+  margin-left: 22%;
+  margin-bottom: 5%;
+  background-color: white;
+}
+#name {
+  color: #386093;
+  margin-top: 5%;
+  margin-left: 9%;
+  font-size: 27px;
+  font-weight: bolder;
+}
+#image {
+  height: 35vh;
+  width: 33%;
+  border-radius: 50%;
+  margin: 4%;
+  background-image: url(assets/boy.JPG);
+  background-size: 121%;
+  background-repeat: no-repeat;
+}
+#contact_heading,
+#lang_heading {
+  color: #386093;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-left: 3%;
+}
+#contact_div,
+#language_div {
+  border-top: 3px solid #386093;
+  height: 31vh;
+  width: 36%;
+  margin-left: 3%;
+}
+#phone,
+#email,
+#address {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.heading {
+  font-weight: bolder;
+}
+ul {
+  list-style: upper-roman;
+  margin-left: 8%;
+}
+
+#language_div ul li {
+  padding-top: 2%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+
+#summary_heading {
+  color: #386093;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: -118%;
+  margin-right: 33.3%;
+  float: right;
+}
+#summary_div {
+  border-top: 3px solid #386093;
+  height: 31vh;
+  width: 44%;
+  margin-right: 3%;
+  margin-top: -115%;
+  text-align: left;
+  float: right;
+}
+
+#summary_div p {
+  padding-top: 2%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+
+#skill_heading {
+  color: #386093;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: -89%;
+  margin-right: 39.3%;
+  float: right;
+}
+
+#skills_div {
+  border-top: 3px solid #386093;
+  height: 31vh;
+  width: 44%;
+  margin-right: 3%;
+  margin-top: -86%;
+  text-align: left;
+  float: right;
+}
+
+#skills_div ul {
+  list-style-type: upper-roman;
+  padding-top: 2%;
+}
+
+#skills_div ul li {
+  padding-top: 2%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+
+#exp_heading {
+  color: #386093;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: -61%;
+  margin-right: 30.5%;
+  float: right;
+}
+
+#exp_div {
+  border-top: 3px solid #386093;
+  height: 33vh;
+  width: 44%;
+  margin-right: 3%;
+  margin-top: -58%;
+  text-align: left;
+  float: right;
+}
+
+#exp_div ul {
+  list-style-type: upper-roman;
+  padding-top: 2%;
+}
+#exp_div ul li {
+  padding-top: 2%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+
+#edu_heading {
+  color: #386093;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: -26%;
+  margin-right: 32%;
+  float: right;
+}
+
+#education_div {
+  border-top: 3px solid #386093;
+  height: 27vh;
+  width: 44%;
+  margin-right: 3%;
+  margin-top: -23%;
+  text-align: left;
+  float: right;
+}
+
+#education_div ul {
+  list-style-type: upper-roman;
+  padding-top: 2%;
+}
+#education_div ul li {
+  padding-top: 2%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+
+footer {
+  background-color: #264061;
+  width: 66%;
+  height: 8vh;
+  margin-left: 34%;
+  margin-top: 3.2%;
+}
+
+#edit {
+  height: 7vh;
+  width: 12%;
+  z-index: 1;
+  opacity: 0.4;
+  margin-top: 1%;
+  float: right;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+#edit:hover {
+  opacity: 1;
+}
+
+#input_form_div {
+  border-radius: 25px;
+  background-color: white;
+  height: 112vh;
+  width: 56%;
+  box-shadow: 11px 17px 34px black;
+  z-index: 1;
+  margin: -59% 0% 0% -8%;
+  position: absolute;
+  transition: 1s all;
+  display: none;
+}
+
+form label {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+#lang_error,
+#skill_error,
+#exp_error,
+#edu_error {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 12px;
+  color: red;
+}
+
+input {
+  margin-bottom: 2%;
+}
+
+form {
+  margin-top: 6%;
+  margin-left: 29%;
+}
+#lang_div {
+  position: absolute;
+  display: inline-block;
+  margin-left: -13%;
+  margin-top: 2%;
+}
+#skill_div {
+  position: absolute;
+  display: inline-block;
+  margin-left: 21%;
+  margin-top: 2%;
+}
+#exp_input_div {
+  position: absolute;
+  display: inline-block;
+  margin-left: -13%;
+  margin-top: 32%;
+}
+#edu_input_div {
+  position: absolute;
+  display: inline-block;
+  margin-left: 21%;
+  margin-top: 32%;
+}
+
+button {
+  color: green;
+  border: none;
+  background-color: white;
+  width: 4%;
+  cursor: pointer;
+}
+
+#ok,
+#reset {
+  width: 5%;
+  height: 4vh;
+  transition: 0.5s all;
+  z-index: 2;
+  border: none;
+  margin-top: 2%;
+  cursor: pointer;
+}
+#ok:hover,
+#reset:hover {
+  transform: scale(1.1);
+}
+#ok {
+  color: white;
+  background-color: green;
+  margin-left: 86%;
+}
+#reset {
+  color: white;
+  background-color: red;
+}

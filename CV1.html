@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="CV1.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>CV1</title>
+    <script src="CV1.js"></script>
+  </head>
+
+  <body>
+    <div id="main_div">
+      <button id="edit" onclick="edit()">
+        <i class="far fa-edit"></i>
+      </button>
+      <!-- <button id="print"></button> -->
+
+      <div id="blue_box"></div>
+
+      <div id="name">
+        <span id="firstname">Muhammad</span>
+        <br />
+        <span id="lastname">Anas</span>
+      </div>
+
+      <div id="image"></div>
+
+      <span id="contact_heading">Contact</span>
+      <div id="contact_div">
+        <br />
+        <span class="heading">Address:</span>
+        <br />
+        <span id="address">Mohalla Canal Park, Muridke.</span>
+        <br />
+        <br />
+        <span class="heading">Phone:</span>
+        <br />
+        <span id="phone">+923004872611</span>
+        <br />
+        <br />
+        <span class="heading">Email:</span>
+        <br />
+        <span id="email">bsem-f19-190@superior.edu.pk</span>
+      </div>
+
+      <span id="lang_heading">Languages</span>
+      <div id="language_div">
+        <br />
+        <ul id="lang_list">
+          <li>Arabic</li>
+          <li>English</li>
+          <li>Urdu</li>
+          <li>Punjabi</li>
+        </ul>
+      </div>
+
+      <span id="summary_heading">Summary</span>
+      <div id="summary_div">
+        <p id="summary_para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis
+          debitis perferendis provident inventore error tempora quia, cumque
+          nesciunt, fugit molestiae optio facere aperiam nam nihil, illo ea
+          quos. Assumenda?Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Molestias quod quis dolorem.
+        </p>
+      </div>
+
+      <span id="skill_heading">Skills</span>
+      <div id="skills_div">
+        <ul id="skills_list">
+          <li>C++ Programming</li>
+          <li>Website Development</li>
+          <li>Mobile App Development</li>
+          <li>Graphic Designing</li>
+          <li>Python Programming</li>
+        </ul>
+      </div>
+
+      <span id="exp_heading">Experience</span>
+      <div id="exp_div">
+        <ul id="exp_list">
+          <li>2 years experience in web developemnt</li>
+          <li>1 year experience in java development</li>
+          <li>1 year experience working at 12C Software house</li>
+          <li>
+            3 years experience working as a senior software engineer at Google
+          </li>
+        </ul>
+      </div>
+
+      <span id="edu_heading">Education</span>
+      <div id="education_div">
+        <ul id="edu_list">
+          <li>Ms in Computer Science From Fast National University Lahore</li>
+          <li>BSSE From Superior University Lahore</li>
+          <li>Fsc From Superior College Muridke</li>
+          <li>Matric From Jinnah Ideal High School</li>
+        </ul>
+      </div>
+
+      <div id="input_form_div">
+        <button id="ok" onclick="fillCv()"><i class="fas fa-check"></i></button>
+        <button id="reset" onclick="reset()">
+          <i class="fas fa-times"></i>
+        </button>
+        <form>
+          <input type="text" id="fname" placeholder="First Name" required />
+          <input type="text" id="lname" placeholder="Last Name" required />
+          <br />
+          <input type="text" id="add" placeholder="Address" required />
+          <input type="text" id="phn" placeholder="Phone" required />
+          <br />
+          <input type="text" id="eml" placeholder="Email" required />
+          <br />
+          <textarea
+            id="summary"
+            cols="40"
+            rows="5"
+            placeholder="Summary"
+          ></textarea>
+          <br />
+          <!----------------------------------------------------------->
+          <div id="lang_div">
+            <input
+              type="number"
+              id="lang_num"
+              onchange="check_lang()"
+              placeholder="How Many Languages?"
+              required
+            />
+            <br />
+            <span id="lang_error"></span>
+            <br />
+            <button id="lang_ok" onclick="make_languages()">
+              <i class="fas fa-check"></i>
+            </button>
+            <ul style="list-style-type: none" id="lang"></ul>
+            <br />
+          </div>
+          <!----------------------------------------------------------->
+          <div id="skill_div">
+            <input
+              type="number"
+              id="skill_num"
+              onchange="check_skill()"
+              placeholder="How Many Skills?"
+              required
+            />
+            <br />
+            <span id="skill_error"></span>
+            <br />
+            <button id="skill_ok" onclick="make_skill()">
+              <i class="fas fa-check"></i>
+            </button>
+            <ul style="list-style-type: none" id="skill"></ul>
+            <br />
+          </div>
+          <!----------------------------------------------------------->
+          <div id="exp_input_div">
+            <input
+              type="number"
+              id="exp_num"
+              onchange="check_exp()"
+              placeholder="Experiences"
+              required
+            />
+            <br />
+            <span id="exp_error"></span>
+            <br />
+            <button id="exp_ok" onclick="make_exp()">
+              <i class="fas fa-check"></i>
+            </button>
+            <ul style="list-style-type: none" id="exp"></ul>
+            <br />
+          </div>
+          <!----------------------------------------------------------->
+          <div id="edu_input_div">
+            <input
+              type="number"
+              id="edu_num"
+              onchange="check_edu()"
+              placeholder="Educations"
+              required
+            />
+            <br />
+            <span id="edu_error"></span>
+            <br />
+            <button id="edu_ok" onclick="make_edu()">
+              <i class="fas fa-check"></i>
+            </button>
+            <ul style="list-style-type: none" id="edu"></ul>
+            <br />
+          </div>
+          <!----------------------------------------------------------->
+        </form>
+      </div>
+
+      <footer></footer>
+    </div>
+  </body>
+</html>
